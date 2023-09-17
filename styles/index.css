@@ -1,0 +1,186 @@
+.mainDiv {
+  border-radius: 10px; /* adds rounded corners to elements */
+  width: 1000px;
+  margin:auto;
+}
+body{
+  background-image: url(../images/imagem.jpg);
+}
+
+.section_1 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 20px; /* top and bottom, right and left */
+  opacity: 0.8;
+}
+
+nav {
+  width: fit-content;
+  background-color: whitesmoke;
+  text-align: right;
+  padding: 1px;
+  border-radius: 20px; /* adds rounded corners to elements */
+  border: solid 3px rgb(102, 128, 162);
+}
+
+ul {
+  list-style-type: none; /* nao ter os pontos na lista */
+  border-right: 0;
+  padding-right: 50px;
+}
+li {
+  display: inline-block;
+  background-color: white;
+  transition-duration: 0.4s;
+  padding: 10px 40px; /* top and bottom, right and left */
+  border: solid 3px rgb(102, 128, 162);
+  border-radius: 6px; /* adds rounded corners to elements */
+  margin-bottom: 1px;
+  margin-right: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li:hover {
+  background-color: rgb(220, 222, 225);
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.section_2 {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.section_img {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: solid 3px rgb(102, 128, 162);
+}
+
+img {
+  border-radius: 10px;
+  height: 90%;
+  width: auto;
+}
+
+.section_nome {
+  width: 65%;
+  line-height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: solid 3px rgb(102, 128, 162);
+  opacity: 0.8;
+}
+
+.nome_inner_section {
+  width: 60%;
+  background-color: rgb(220, 222, 225);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section_3 {
+  height: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.8;
+}
+
+.section_sobre {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: whitesmoke;
+  padding: 2% 5%; /* top and bottom, right and left */
+  border: solid 3px rgb(102, 128, 162);
+}
+
+.section_dados {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: whitesmoke;
+  padding: 2% 5%; /* top and bottom, right and left */
+  border: solid 3px rgb(102, 128, 162);
+}
+
+.sub_header {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(220, 222, 225);
+  padding: 5px 0px; 
+  font-weight: bold;
+}
+
+section, .sub_header {
+  margin: 5px;
+  border-radius: 20px; /* adds rounded corners to elements */
+}
+
+.section_map {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: whitesmoke;
+  padding: 2% 5%; /* top and bottom, right and left */
+  border: solid 3px rgb(102, 128, 162);
+}
+
+.map_header {
+  text-align: center;
+  width: 80%;
+  background-color: rgb(220, 222, 225);
+  padding: 5px 0px; 
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 20px; /* adds rounded corners to elements */
+}
+
+h1{
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: justify;
+}
+
+table{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+th{
+text-align: justify;
+}
+
+td{
+text-align: start;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaflet Map</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+  <link rel="stylesheet" href="./cluster/MarkerCluster.css" />
+  <link rel="stylesheet" href="./cluster/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="./css/websig.css" />
+
+</head>
+
+<body>
+  <div class="mainDiv" style="width: 1400px;">
+    <section class="section_1">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Página Inicial</a></li>
+          <li><a href="../sec_pages/exp_prof.html">Experiência Profissional</a></li>
+          <li><a href="../sec_pages/formacao.html">Formação</a></li>
+          <li><a href="../sec_pages/competencias.html">Competências Pessoais</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="section_map">
+      <header class="map_header">
+        <h3>Limites Administrativos do Concelho de Matosinhos</h3>
+      </header>
+      <div id="map1" style="width: 1000px; height: 600px"></div>
+    </section>
+    <br>
+    <section class="section_map">
+      <header class="map_header">
+        <h3>Loteamentos, Lotes e Áreas Verdes dos Loteamentos</h3>
+      </header>
+      <div id="map2" style="width: 1000px; height: 600px"></div>
+    </section>
+    <br>
+    <section class="section_map">
+      <header class="map_header">
+        <h3>PDM de 1992 e 2019 e Uso e Ocupação do Solo de 2015 e 2021</h3>
+      </header>
+      <div id="map3" style="width: 1000px; height: 800px"></div>
+    </section>
+    <br>
+    <section class="section_map">
+      <header class="map_header">
+        <h3>Clusters dos Processos de Obras Particulares</h3>
+      </header>
+      <div id="map_cluster" style="width: 1000px; height: 600px"></div>
+    </section>
+    <br>
+    <section class="section_map">
+      <header class="map_header">
+        <h3>Mapa de Calor dos Empreendimentos Turísticos</h3>
+      </header>
+      <div id="map_heat1" style="width: 1000px; height: 600px"></div>
+    </section>
+    <br>
+    <section class="section_map">
+      <header class="map_header">
+        <h3>Mapa de Calor dos Alojamentos Locais</h3>
+      </header>
+      <div id="map_heat2" style="width: 1000px; height: 600px"></div>
+    </section>
+  </div>
+  <!-- Add the Leaflet JavaScript library -->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+  <script src="./cluster/leaflet.markercluster-src.js"></script>
+  <script src="./javascript/leaflet-heat.js"></script>
+  <script src="./geojson/concelho.geojson"></script> <!-- limite do concelho -->
+  <script src="./geojson/freguesias.geojson"></script> <!-- limite das freguesias -->
+  <script src="./geojson/loteamentos.geojson"></script> <!-- limite dos alvaras_loteamento -->
+  <script src="./geojson/lotes.geojson"></script> <!-- limite dos lotes -->
+  <script src="./geojson/zv_lote.geojson"></script> <!-- zona verde loteamentos -->
+  <script src="./geojson/PDM_92_area_equip.geojson"></script> <!-- PDM92 area equipamento -->
+  <script src="./geojson/PDM_92_area_ind.geojson"></script> <!-- PDM92 area industrial -->
+  <script src="./geojson/PDM_92_area_mor_isol.geojson"></script> <!-- PDM92 area moradia isolada -->
+  <script src="./geojson/PDM_92_area_res.geojson"></script> <!-- PDM92 area residencial -->
+  <script src="./geojson/PDM_92_area_serv.geojson"></script> <!-- PDM92 area servicos -->
+  <script src="./geojson/PDM_92_area_ver.geojson"></script> <!-- PDM92 area verde -->
+  <script src="./geojson/PDM_92_conj_arq.geojson"></script> <!-- PDM92 area conjunto arquitetonico -->
+  <script src="./geojson/PDM_92_sem_clas.geojson"></script> <!-- PDM92 sem classificacao -->
+  <script src="./geojson/PDM_92_serv_arm.geojson"></script> <!-- PDM92 servicos armazenagem -->
+  <script src="./geojson/PDM_2019_area_logist.geojson"></script>
+  <!-- PDM2019 Espacos de Atividades Economicas - Areas de Logistica -->
+  <script src="./geojson/PDM_2019_ativ_econ.geojson"></script>
+  <!-- PDM2019 Espacos de Atividades Economicas - Areas de Atividades Economicas -->
+  <script src="./geojson/PDM_2019_ativ_econ_est_ver.geojson"></script>
+  <!-- PDM2019 Espacos de Atividades Economicas - Areas de Atividades Economicas e Estrutura Verde Urbana -->
+  <script src="./geojson/PDM_2019_esp_agr.geojson"></script>
+  <!-- PDM2019 Espacos de Atividades Economicas - Areas de Atividades Economicas -->
+  <script src="./geojson/PDM_2019_esp_cent.geojson"></script> <!-- PDM2019 Espacos Centrais -->
+  <script src="./geojson/PDM_2019_esp_flor.geojson"></script> <!-- PDM2019 Espacos Florestais -->
+  <script src="./geojson/PDM_2019_esp_urb_bai_dens.geojson"></script>
+  <!-- PDM2019 Espacos Urbanos de Baixa Densidade -->
+  <script src="./geojson/PDM_2019_esp_ver.geojson"></script> <!-- PDM2019 Espacos Verdes -->
+  <script src="./geojson/PDM_2019_nat_pais.geojson"></script> <!-- PDM2019 Espacos Naturais e Paisagisticos -->
+  <script src="./geojson/COS15_area_agric.geojson"></script> <!-- COS15 Areas Agricolas -->
+  <script src="./geojson/COS15_area_aren.geojson"></script> <!-- COS15 Areas Arenosas -->
+  <script src="./geojson/COS15_area_flor.geojson"></script> <!-- COS15 Areas Florestais -->
+  <script src="./geojson/COS15_area_indus.geojson"></script> <!-- COS15 Areas Industriais -->
+  <script src="./geojson/COS15_massas_agua.geojson"></script> <!-- COS15 Massas de Agua -->
+  <script src="./geojson/COS15_rede_viaria.geojson"></script> <!-- COS15 Rede Viaria -->
+  <script src="./geojson/COS15_territ_artif.geojson"></script> <!-- COS15 Territorios Artificializados -->
+  <script src="./geojson/COS21_area_agric.geojson"></script> <!-- COS21 Areas Agricolas -->
+  <script src="./geojson/COS21_area_aren.geojson"></script> <!-- COS21 Areas Arenosas -->
+  <script src="./geojson/COS21_area_flor.geojson"></script> <!-- COS21 Areas Florestais -->
+  <script src="./geojson/COS21_area_indus.geojson"></script> <!-- COS21 Areas Industriais -->
+  <script src="./geojson/COS21_massas_agua.geojson"></script> <!-- COS21 Massas de Agua -->
+  <script src="./geojson/COS21_rede_viaria.geojson"></script> <!-- COS21 Rede Viaria -->
+  <script src="./geojson/COS21_territ_artif.geojson"></script> <!-- COS21 Territorios Artificializados -->
+  <script src="./geojson/2015_area_const.geojson"></script> <!-- 2015 Area construida -->
+  <script src="./geojson/2015_area_nao_const.geojson"></script> <!-- 2015 Area nao construida -->
+  <script src="./geojson/2021_area_const.geojson"></script> <!-- 2021 Area construida -->
+  <script src="./geojson/2021_area_nao_const.geojson"></script> <!-- 2021 Area nao construida -->
+  <script src="./geojson/processos.geojson"></script> <!-- Processos de Obras -->
+  <script src="./geojson/emp_tur.geojson"></script> <!-- Hoteis -->
+  <script src="./geojson/aloj_local.geojson"></script> <!-- Alojamentos Locais -->
+  <script src="./javascript/mapa1.js"></script> <!-- Mapa 1 -->
+  <script src="./javascript/mapa2.js"></script> <!-- Mapa 2 -->
+  <script src="./javascript/mapa3.js"></script> <!-- Mapa 3 -->
+  <script src="./javascript/clusters.js" defer></script> <!-- Mapa 4 -->
+  <script src="./javascript/heat-map_1.js" defer></script> <!-- Mapa 5 -->
+  <script src="./javascript/heat-map_2.js" defer></script> <!-- Mapa 6 -->
+</body>
+
+</html>

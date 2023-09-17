@@ -1,0 +1,26 @@
+var emp_tur=[{
+"type": "FeatureCollection",
+"name": "emp_tur",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "nomeequip": "Portofino Hotel Motel", "classe": "Hotel", "categoria": "2 estrelas", "freguesia": "São Mamede de Infesta" }, "geometry": { "type": "Point", "coordinates": [ -8.624890189690861, 41.188879923257744 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Holiday Inn Express Porto - Exponor", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.690173043114154, 41.194819235055171 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Leça da Palmeira", "classe": "Hotel", "categoria": "2 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.697208480960553, 41.192173974372643 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Axis Porto Business & Spa Hotel", "classe": "Hotel", "categoria": "4 estrelas", "freguesia": "São Mamede de Infesta" }, "geometry": { "type": "Point", "coordinates": [ -8.597430462065125, 41.187773208322803 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Tryp Porto Expo", "classe": "Hotel", "categoria": "4 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.692406926742546, 41.202511645507535 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Motel Havay Hotel", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Leça do Balio" }, "geometry": { "type": "Point", "coordinates": [ -8.62859981729031, 41.200623354110924 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Parque de Campismo e Caravanismo Orbitur Angeiras", "classe": "Parque campismo/caravanismo", "categoria": "3 estrelas", "freguesia": "Lavra" }, "geometry": { "type": "Point", "coordinates": [ -8.720242145822054, 41.268465070594566 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Via Norte", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Leça do Balio" }, "geometry": { "type": "Point", "coordinates": [ -8.626367379284543, 41.218041257021497 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Quasar", "classe": "Hotel", "categoria": "2 estrelas", "freguesia": "São Mamede de Infesta" }, "geometry": { "type": "Point", "coordinates": [ -8.613423355535605, 41.185513290482938 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Urban Hotel Amadeos", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.681806122607178, 41.181162139030853 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Moov Porto Norte", "classe": "Hotel", "categoria": "2 estrelas", "freguesia": "Senhora da Hora" }, "geometry": { "type": "Point", "coordinates": [ -8.653149483881119, 41.180296474065429 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Sea Porto Hotel", "classe": "Hotel", "categoria": "4 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.685247775922463, 41.185688420464608 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "O Valentim Hotel", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.695304950177558, 41.183634616188556 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Senhor de Matosinhos", "classe": "Hotel", "categoria": "2 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.687432400189339, 41.183431324754515 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Hotel Porto Mar", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.693152288130571, 41.185868406754167 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "MOTEL HABANA  HOTEL", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Perafita" }, "geometry": { "type": "Point", "coordinates": [ -8.68492737102898, 41.223561705222856 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Eurostars Matosinhos", "classe": "Hotel", "categoria": "4 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.693618701037568, 41.181266585342406 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "B&B Hotel Porto Expo Aeroporto", "classe": "Hotel", "categoria": "3 estrelas", "freguesia": "Perafita" }, "geometry": { "type": "Point", "coordinates": [ -8.684068700681156, 41.224045538780601 ] } },
+{ "type": "Feature", "properties": { "nomeequip": "Four Points by Sheraton Matosinhos", "classe": "Hote apartamento", "categoria": "4 estrelas", "freguesia": "Matosinhos" }, "geometry": { "type": "Point", "coordinates": [ -8.68845118139506, 41.176402607201446 ] } }
+]
+}]
